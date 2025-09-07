@@ -170,28 +170,6 @@ proxy: {
 - **실시간 업데이트**: 메시지 전송 시 즉시 반영
 - **직관적인 네비게이션**: 사이드바 기반 채팅 관리
 
-## 🔮 향후 개발 계획
 
-- [ ] 실제 LLM API 연동 (OpenAI, Anthropic 등)
-- [ ] 파일 업로드 및 이미지 처리
-- [ ] 채팅 내보내기/가져오기
-- [ ] 다국어 지원
-- [ ] 실시간 채팅 (WebSocket)
-- [ ] 사용자 프로필 관리
-- [ ] 채팅 검색 기능
-
-## 🤝 기여하기
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📄 라이선스
-
-이 프로젝트는 MIT 라이선스 하에 배포됩니다.
-
-## 📞 문의
 
 프로젝트에 대한 질문이나 제안사항이 있으시면 이슈를 생성해 주세요.
