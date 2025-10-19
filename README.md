@@ -1,6 +1,7 @@
 # LLM Chat Application
 
 Open WebUI나 LibreChat과 같은 LLM 채팅 사이트를 FastAPI 백엔드와 TypeScript 프론트엔드로 구현한 프로젝트입니다.
+- 사용데이터 - https://www.kaggle.com/datasets/fronkongames/steam-games-dataset/data
 
 ## 주요 기능
 
