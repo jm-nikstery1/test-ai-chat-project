@@ -1,0 +1,45 @@
+# 공통
+.DS_Store
+Thumbs.db
+*.log
+
+# Python 백엔드
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+*.sqlite3
+*.db
+/.pytest_cache/
+/htmlcov/
+/coverage/
+/backend/.venv/
+.venv/
+env/
+venv/
+backend/.env
+backend/.env.*
+
+# Node 프론트엔드
+/frontend/node_modules/
+/frontend/.npm/
+/frontend/.yarn/
+/frontend/.pnpm-store/
+*.tsbuildinfo
+frontend/dist/
+frontend/build/
+frontend/.env
+frontend/.env.*
+
+# 데이터/ETL 산출물
+/data_etl/**/*.csv
+/data_etl/**/*.json
+/data_etl/**/*.parquet
+/data_etl/**/outputs/
+/data_etl/**/__pycache__/
+
+# IDE & 기타
+.vscode/
+.idea/
+*.swp
+*.swo

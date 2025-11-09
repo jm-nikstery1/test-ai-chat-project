@@ -1,0 +1,58 @@
+[project]
+name = "llm-chat-backend"
+version = "1.0.0"
+description = "LLM Chat Backend with FastAPI"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi==0.104.1",
+    "uvicorn[standard]==0.24.0",
+    "sqlalchemy==2.0.23",
+    "alembic==1.12.1",
+    "psycopg2-binary==2.9.9",
+    "python-multipart==0.0.6",
+    "python-jose[cryptography]==3.3.0",
+    "python-dotenv==1.0.0",
+    "pydantic[email]==2.5.0",
+    "pydantic-settings==2.1.0",
+    "bcrypt==3.2.2",
+    "passlib[bcrypt]>=1.7.4",
+    "ollama>=0.3.3",
+    "pandas>=2.3.2",
+    "neo4j>=5.28.2",
+    "qdrant-client>=1.15.1",
+    "torch==2.6.0",
+    "sentence-transformers>=5.1.0",
+    "google-generativeai>=0.8.5",
+    "tqdm>=4.67.1",
+    "pymysql>=1.1.2",
+]
+
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["app"]
+
+[tool.uv]
+dev-dependencies = [
+    "pytest-asyncio>=0.21.0",
+    "httpx>=0.24.0",
+]
+
+[tool.uv.sources]
+torch = [
+{ index = "pytorch-cu124" },
+]
+torchaudio = [
+{ index = "pytorch-cu124" },
+]
+torchvision = [
+{ index = "pytorch-cu124" },
+]
+
+[[tool.uv.index]]
+name = "pytorch-cu124"
+url = "https://download.pytorch.org/whl/cu124"
+explicit = true
